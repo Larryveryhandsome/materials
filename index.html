@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滿築5 建材設備介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .material-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+        }
+        .material-btn:hover {
+            background-color: #0056b3;
+        }
+        .material-content {
+            display: none;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .material-content h3 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+        .material-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>滿築5 建材設備介紹</h1>
+    <div class="container">
+        <button class="material-btn" onclick="toggleContent('structure')">結構</button>
+        <div id="structure" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p>採用鋼筋混凝土結構，由專業結構技師使用電腦程式精算，並經專家審核，符合內政部建築法令規定，依縣政府核准圖紙施工。提供建築物的承重、抗壓、防颱、防震與防火性能，確保整體穩固與安全。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準多用3000psi混凝土，結構設計未必經專業精算。我們採用更高強度混凝土（假設為3500psi），並由技師精算與專家審核，抗震與防火性能更優，特別適合台灣多颱風與地震環境。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('exterior')">外觀</button>
+        <div id="exterior" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p>外牆採用四面處理，精心配色，由知名建築師設計。提升建築外觀美感，保護外牆免受風雨侵蝕，展現現代化設計風格。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準外牆多為單一水泥漆或簡單瓷磚，設計較樸素。我們採用四面配色與知名建築師設計，外觀時尚且具立體感，提升建築價值與吸引力。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('doors-windows')">門窗</button>
+        <div id="doors-windows" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>大門</strong>：60A防火鋼板門，提供防火與防盜保護。<br>
+               <strong>臥室門</strong>：藝術實木門，配門止與水平鎖，分隔空間並兼具美觀。<br>
+               <strong>浴廁門</strong>：氣質塑鋼門，配百葉與水平鎖，確保通風與隱私。<br>
+               <strong>廚房後門</strong>：三合一通風鋁門，具防盜、防蚊與通風功能。<br>
+               <strong>窗戶</strong>：九州氣密鋁窗，附紗窗與加壓氣密座，隔絕噪音與風雨並防蚊。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準用普通鋼門與5-6mm玻璃窗，鎖具簡單。我們的60A防火門具更高防火時效，氣密鋁窗與三合一通風門提升隔音與實用性，安全性與功能性全面超越。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('flooring')">地坪</button>
+        <div id="flooring" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>室內</strong>：Decopavi牌1220×228×(5+1.5)mm SPC石塑地板，提供耐磨、防潮地面。<br>
+               <strong>浴廁</strong>：聖瑪莉諾牌30×30cm石英磚，防滑耐用。<br>
+               <strong>陽台/露台</strong>：三洋牌30×30cm山海岩石英磚，耐候防滑。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準用普通瓷磚或薄層木紋磚。我們的SPC地板厚達5+1.5mm，耐磨且腳感佳；聖瑪莉諾與三洋石英磚質感高級，耐用性與防滑效果更勝一籌。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('interior-walls')">內牆</button>
+        <div id="interior-walls" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>客廳/餐廳/臥室</strong>：虹牌水性平光水泥漆，提供平滑牆面與舒適氛圍。<br>
+               <strong>浴廁</strong>：聖瑪莉諾牌30×60cm石英磚，防水耐用。<br>
+               <strong>廚房流理台壁面</strong>：5mm烤漆玻璃，耐熱易清潔。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準用普通油漆與低成本磁磚。我們的虹牌漆環保無毒，聖瑪莉諾石英磚與烤漆玻璃耐用且具現代感，清潔便利性遠超一般建材。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('bathroom')">衛浴設備</button>
+        <div id="bathroom" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>馬桶</strong>：TOTO高級節能馬桶，配大明鏡，提供舒適如廁體驗。<br>
+               <strong>淋浴</strong>：乾濕分離設計，配高級淋浴設備與玻璃拉門，保持浴室乾燥。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準用普通馬桶，少乾濕分離。我們的TOTO馬桶節水先進，乾濕分離與大明鏡提升舒適度與衛生性，超越基本配置。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('electrical')">電氣設備</button>
+        <div id="electrical" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>配線與開關</strong>：單相三線式110V/220V，士林電機無熔絲開關與漏電斷路器，太平洋電線與國際牌開關，確保用電安全。<br>
+               <strong>預留設施</strong>：預留電視線、網路與電話管線，分離式冷氣電源與排水，提升便利性。<br>
+               <strong>火災警報器</strong>：光電式（寢室/樓梯/走廊）與定溫式（廚房），提供火災預警。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準少預留線路與警報器。我們的士林電機與太平洋電線品質可靠，漏電斷路器與火災警報器提升安全，預留設施方便升級，功能性領先。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('plumbing')">給排水設備</button>
+        <div id="plumbing" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>供水</strong>：自來水系統，每戶獨立水錶，提供穩定用水。<br>
+               <strong>管線</strong>：不銹鋼熱水管與南亞PVC冷水管，經試壓測定，確保穩定。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準用普通PVC管，未必試壓。我們的不銹鋼熱水管耐腐蝕，試壓確保無漏水，穩定性優於一般管材。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('security')">社區安全設備</button>
+        <div id="security" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>CCTV</strong>：監視器系統，具自動存錄功能，全天候監控。<br>
+               <strong>對講機</strong>：大門與住戶連線，室內可操控開門，管理訪客。<br>
+               <strong>信箱</strong>：每戶專用信箱，方便郵件收取。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準監視器少存錄功能。我們的CCTV具存錄證據，對講機智能操控，安全性與便利性高於一般系統。</p>
+        </div>
+
+        <button class="material-btn" onclick="toggleContent('solar')">太陽能設施</button>
+        <div id="solar" class="material-content">
+            <h3>我們的建材介紹（基礎功能）</h3>
+            <p><strong>系統</strong>：屋頂太陽能光電系統，20年租賃契約，收益歸管委會，利用太陽能發電並降低用電成本。</p>
+            <h3>跟別人比起來優勢是什麼</h3>
+            <p>一般標準無太陽能或僅為裝飾。我們的太陽能產生租金收益，降低管理費負擔，具綠能與投資價值。</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                // 隱藏所有內容
+                document.querySelectorAll('.material-content').forEach(item => {
+                    item.style.display = "none";
+                });
+                // 顯示當前點擊的內容
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
